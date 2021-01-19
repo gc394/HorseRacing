@@ -3,17 +3,10 @@ library(tidyverse)
 wd = getwd()
 
 race_df = read_csv(paste0(wd, '/race-result-race.csv'))
-
 horse_df = read_csv((paste0(wd, '/race-result-horse.csv')))
 
 #### EDA
 #EW Rules - https://myracing.com/guides/guide-to-racing/many-places-horse-race/
-
-# 1-4, 1
-# 5-7, 2 at 1/4
-# 8+ (non-handicap), 3 at 1/5
-# 12-15(handicap), 3 at 1/4
-# 16+ (handicap), 4 at 1/4
 
 bet = 1
 
